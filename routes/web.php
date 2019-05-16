@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/', 'StaticPagesController@home')->name('home');
 Route::get('/help', 'StaticPagesController@help')->name('help');
 Route::get('/about', 'StaticPagesController@about')->name('about');
+
+/* /signup 和 sigup 兼容写法*/
+Route::get('signup', 'UsersController@create')->name('signup');
