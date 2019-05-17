@@ -22,3 +22,5 @@ Route::get('/about', 'StaticPagesController@about')->name('about');
 
 /* /signup 和 sigup 兼容写法*/
 Route::get('signup', 'UsersController@create')->name('signup');
+
+Route::resource('users', 'UsersController');
